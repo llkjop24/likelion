@@ -6,8 +6,8 @@ class SearchesController < ApplicationController
                             
         puts @posts
         
-        # @comments = Comment.where("content LiKE ?" "%#{word}%")
+        @comments = Comment.where("content LiKE ?" "%#{word}%")
         
-        # puts @comments
+        puts @comments
     end
 end
