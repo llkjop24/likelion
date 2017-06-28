@@ -1,0 +1,13 @@
+<h1>검색된 post입니다.</h1>
+
+<% @posts.each do |post| %>
+      <h3>
+        <a href="/posts/show/<%= post.id %>">
+          <%= post.id %> 
+          <%= post.title %>
+          <%= post.counter %>
+        </a>
+      </h3>
+<% end %>
+
+<h2><a href="/posts/new">[추가하기]</a></h2>
